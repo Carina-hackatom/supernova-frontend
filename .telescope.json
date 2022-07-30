@@ -1,0 +1,21 @@
+{
+  "protoDirs": [
+    "./proto"
+  ],
+  "outPath": "supernovajs",
+  "options": {
+    "typingsFormat": {
+      "timestamp": "timestamp",
+      "duration": "duration"
+    },
+    "aminoEncoding": {
+      "enabled": false
+    },
+    "lcdClients": {
+      "enabled": true
+    },
+    "rpcClients": {
+      "enabled": true
+    }
+  }
+}

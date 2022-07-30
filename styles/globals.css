@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.scroll-box {
+  @apply flex flex-col justify-start mt-[20px] h-[180px] pr-[8px] overflow-y-auto text-black;
+}
+
+.yellow-scroll-box {
+  @apply scroll-box bg-yellow-light;
+}
+
+.yellow-scroll-box::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+.yellow-scroll-box::-webkit-scrollbar-thumb {
+  @apply h-[30%] bg-yellow-default rounded-sm;
+}
+
+.purple-scroll-box {
+  @apply scroll-box bg-purple-light;
+}
+
+.purple-scroll-box::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+.purple-scroll-box::-webkit-scrollbar-thumb {
+  @apply h-[30%] bg-purple-default rounded-sm;
+}
